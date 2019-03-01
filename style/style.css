@@ -1,0 +1,373 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+.arrowup {
+  display: none;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.textArea {
+  position: relative;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  padding-top: 17%;
+  padding-bottom: 50px;
+  font-size: 400%;
+  z-index: 9;
+}
+
+.button {
+  position: inherit;
+  background-color: white;
+  text-align: center;
+  font-size: 50%;
+  padding: 13px 28px 13px 28px;
+  line-height: 60px;
+  color: black;
+  text-transform: capitalize;
+  border-radius: 3%;
+}
+
+.outer {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height: 200px;
+  margin-left: 45%;
+
+}
+
+.middle {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.loading-circle {
+  height: 160px;
+  margin: 0px auto;
+  position: relative;
+  width: 160px;
+}
+
+.percent {
+  color: #fff;
+  display: block;
+  font-size: 36px;
+  margin: -22px 0px 0px 5px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.circle1 {
+  background-color: #333;
+  border: 5px solid;
+  border-color: #fff transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 16px #000;
+  -moz-box-shadow: 0px 0px 16px #000;
+  box-shadow: 0px 0px 16px #000;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.text {
+  font-family: Arial, sans-serif;
+  margin-left: 45.5%;
+  padding-top: 80px;
+  color: white;
+  font-size: 30px;
+  margin-top: 4em;
+}
+
+.rotate-right {
+  -webkit-animation: rotate 2s linear 0s infinite reverse;
+  -moz-animation: rotate 2s linear 0s infinite reverse;
+  animation: rotate 2s linear 0s infinite reverse;
+}
+
+#blockI {
+  z-index: -1;
+  display: none;
+}
+
+#blockI.blockO, #blockI.blockCh, #blockI.blockCh2, #blockI.blockMz, #blockI.blockSaf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: block;
+  opacity: 1;
+}
+
+#blockI .container {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 355px;
+}
+
+#blockI .container .arrow {
+  width: 100px;
+  height: 170px;
+  margin-top: 200px;
+  margin-left: -20px;
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s infinite alternate;
+
+}
+
+#blockI .block-p {
+  display: inline-block;
+}
+
+#blockI .block-p p {
+  color: #fff;
+  font-size: 23px;
+  line-height: 1;
+  padding-left: 10px;
+}
+
+#blockI .block-p .t1 {
+  margin-top: 50px;
+}
+
+:-webkit-full-screen #blockI .container {
+  left: 10px !important;
+}
+
+:-moz-full-screen #blockI .container {
+  left: 10px !important;
+  text-align: left;
+  right: unset !important;
+  top: 20px;
+}
+
+:fullscreen #blockI .container {
+  left: 10px !important;
+}
+
+:-webkit-full-screen #blockI.blockO {
+  background: #000000db;
+}
+
+:fullscreen #blockI.blockO {
+  background: #000000db;
+}
+
+:-webkit-full-screen #blockI .arrow {
+  margin-left: -25px;
+}
+
+:-moz-full-screen #blockI .arrow {
+  margin-left: 25px;
+}
+
+:fullscreen #blockI .arrow {
+  margin-left: -20px;
+}
+
+#blockI.blockCh .container {
+  left: 73px;
+}
+#blockI.blockCh2 .container {
+  top: 20px;
+  right: 73px;
+}
+#blockI.blockMz .container {
+  left: 180px;
+}
+
+#blockI.blockSaf {
+  position: relative;
+  height: 250px;
+}
+
+#blockI.blockSaf .container, #blockI.blockO .container {
+  top: 50px;
+  left: 50% !important;
+  text-align: right;
+  transform: translate(-50%, -35px);
+}
+
+#blockI.blockSaf .container .arrow, #blockI.blockO .container .arrow {
+  margin-left: unset;
+  margin-right: 10px;
+}
+
+#blockI.blockSaf .container {
+  top: 50px;
+  left: 50%;
+  text-align: right;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.rtl #blockI .container .arrow {
+  margin-right: 30px;
+  margin-left: unset;
+  margin-top: 150px;
+}
+
+.rtl:-webkit-full-screen #blockI .container {
+  top: 40px;
+  left: unset !important;
+  right: 35px !important;
+}
+
+.rtl:-moz-full-screen .rtl #blockI .container {
+  top: 40px;
+  left: unset !important;
+  right: 35px !important;
+}
+
+.rtl:fullscreen #blockI .container {
+  top: 40px;
+  left: unset !important;
+  right: 35px !important;
+}
+
+.rtl:-webkit-full-screen #blockI .arrow {
+  margin-left: unset;
+  margin-right: -25px;
+}
+
+.rtl:-moz-full-screen #blockI .arrow {
+  margin-left: unset;
+  margin-right: -25px;
+}
+
+.rtl:fullscreen #blockI .arrow {
+  margin-left: unset;
+  margin-right: -20px;
+}
+
+.rtl #blockI.blockCh .container {
+  left: unset;
+  right: 73px;
+}
+
+.rtl #blockI.blockCh2 .container {
+  left: unset;
+  right: 73px;
+}
+
+.rtl #blockI.blockMz .container {
+  left: unset;
+  right: 180px;
+}
+
+.rtl #blockI.blockSaf .container, .rtl #blockI.blockO .container {
+  left: unset;
+  right: 50%;
+}
+
+.rtl #blockI.blockSaf .container {
+  left: unset;
+  right: 50%;
+}
+
+@media (max-width: 1440px) {
+  .textArea {
+      padding-top: 530px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #blockI {
+      background: #000000db;
+  }
+
+  #blockI .container {
+      left: 50px !important;
+      top: unset;
+      bottom: 100px;
+      width: calc(100% - 100px);
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+  }
+
+  #blockI .container .arrow {
+      margin-left: 0;
+  }
+
+  .rtl #blockI .container {
+      right: 50px !important;
+      left: unset !important;
+  }
+
+  .rtl #blockI .container .arrow {
+      margin-left: unset;
+      margin-right: 0;
+  }
+
+  #blockI .block-p {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+  }
+
+  .textArea {
+      padding-top: 50px !important;
+      font-size: 270%;
+  }
+}
+
+@-webkit-keyframes mover {
+  0% {
+      transform: translateY(0)
+  }
+  100% {
+      transform: translateY(-30px)
+  }
+}
+
+@keyframes mover {
+  0% {
+      transform: translateY(0)
+  }
+  100% {
+      transform: translateY(-30px)
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+      -moz-transform: rotate(0deg);
+  }
+  to {
+      -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
