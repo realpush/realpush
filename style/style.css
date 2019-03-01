@@ -133,7 +133,7 @@ body {
   width: 100px;
   height: 170px;
   margin-top: 200px;
-  margin-left: -20px;
+  margin-left: 190px;
   -webkit-animation: mover 0.5s infinite alternate;
   animation: mover 0.5s infinite alternate;
 
@@ -152,6 +152,7 @@ body {
 
 #blockI .block-p .t1 {
   margin-top: 50px;
+  padding-left: 190px;
 }
 
 :-webkit-full-screen #blockI .container {
